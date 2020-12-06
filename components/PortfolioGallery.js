@@ -9,6 +9,41 @@ const portfolio = [
     name: 'Compare Club',
     site: null,
     image: '/static/img/portfolio/cc-big.png'
+  },
+  {
+    id: 3,
+    name: 'Compare Club',
+    site: null,
+    image: '/static/img/portfolio/cc-big.png'
+  },
+  {
+    id: 4,
+    name: 'Compare Club',
+    site: null,
+    image: '/static/img/portfolio/cc-big.png'
+  },
+  {
+    id: 5,
+    name: 'Your Life Choices',
+    site: 'yourlifechoices.com.au'
+  },
+  {
+    id: 6,
+    name: 'Compare Club',
+    site: null,
+    image: '/static/img/portfolio/cc-big.png'
+  },
+  {
+    id: 7,
+    name: 'Compare Club',
+    site: null,
+    image: '/static/img/portfolio/cc-big.png'
+  },
+  {
+    id: 8,
+    name: 'Compare Club',
+    site: null,
+    image: '/static/img/portfolio/cc-big.png'
   }
 ]
 
@@ -27,7 +62,8 @@ export default function PortfolioGallery(props) {
         <style jsx>{`
           .portfolio-item {
             width: calc(100% / 2);
-            padding: 20px;
+            padding: 0 15px;
+            margin: 0 0 30px 0 !important;
             padding-top: 0;
           }
 
@@ -54,7 +90,7 @@ export default function PortfolioGallery(props) {
 
             img {
               max-width: 100%;
-              object-fit: cover !important;
+              width: 100%;
             }
           }
         `}</style>
@@ -76,6 +112,7 @@ export default function PortfolioGallery(props) {
           min-height: 100vh;
           display: flex;
           flex-wrap: wrap;
+          align-items: start;
         }
       `}</style>
     </>
